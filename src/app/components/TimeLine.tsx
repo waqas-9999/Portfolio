@@ -20,7 +20,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          As a Senior Frontend Developer at CosVM Labs, I'm at the forefront of crafting an innovative cryptocurrency platform, driving cutting-edge solutions and shaping the future of digital finance.
+            As a Senior Frontend Developer at CosVM Labs, I&apos;m at the forefront of crafting an innovative cryptocurrency platform, driving cutting-edge solutions and shaping the future of digital finance.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -60,10 +60,10 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          Starting My Practical Journey at ZAM Studios as a Junior Frontend Developer! 🎉
+            Starting My Practical Journey at ZAM Studios as a Junior Frontend Developer! 🎉
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          Diving into Diverse Platforms: Laravel, WordPress, React JS, HTML, CSS, Bootstrap & More! 🚀
+            Diving into Diverse Platforms: Laravel, WordPress, React JS, HTML, CSS, Bootstrap & More! 🚀
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -113,7 +113,7 @@ export function TimelineDemo() {
               ✅ SafeDeposit Website
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Jaleebi Express a tour compnay of Karachi
+              ✅ Jaleebi Express a tour company of Karachi
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Smasimltd website of import/export Product For ICONS
@@ -125,28 +125,28 @@ export function TimelineDemo() {
           <div className="grid grid-cols-2 gap-4">
             <Image
               src={BuycexExpress}
-              alt="hero template"
+              alt="Buycex Express"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
               src={Hz4jobsTab}
-              alt="feature template"
+              alt="Hz4jobs Tab"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
               src={WhyChooseHz4jobs}
-              alt="bento template"
+              alt="Why Choose Hz4jobs"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
               src={BuycexChat}
-              alt="cards template"
+              alt="Buycex Chat"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
@@ -156,8 +156,9 @@ export function TimelineDemo() {
       ),
     },
   ];
+
   return (
-    <div className="w-full">
+    <div className="container mx-auto p-4">
       <Timeline data={data} />
     </div>
   );

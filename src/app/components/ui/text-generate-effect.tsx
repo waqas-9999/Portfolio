@@ -14,43 +14,39 @@ export const TextGenerateEffect = ({
   filter?: boolean;
   duration?: number;
 }) => {
-  const [scope, animate] = useAnimate();
+  const [scope, animate] = useAnimate(); // 'scope' refers to the parent container for animating elements
   let wordsArray = words.split(" ");
 
   useEffect(() => {
     animate(
-      "span",
+      scope.current.querySelectorAll("span"), // Pass direct reference to the spans
       {
         opacity: 1,
         filter: filter ? "blur(0px)" : "none",
       },
       {
-        duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        duration: duration || 1,
+        delay: stagger(0.2), // Apply staggered animation for each span
       }
     );
-  }, [scope.current]);
+  }, [animate, filter, duration, words, scope]);
 
   const renderWords = () => {
-    return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => (
-          <motion.span
-            key={word + idx}
-            className="dark:text-white text-black opacity-0"
-            style={{
-              filter: filter ? "blur(10px)" : "none",
-            }}
-          >
-            {word}{" "}
-          </motion.span>
-        ))}
-      </motion.div>
-    );
+    return wordsArray.map((word, idx) => (
+      <motion.span
+        key={word + idx}
+        className="dark:text-white text-black opacity-0"
+        style={{
+          filter: filter ? "blur(10px)" : "none",
+        }}
+      >
+        {word}{" "}
+      </motion.span>
+    ));
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-bold", className ?? "")} ref={scope}> {/* Attach ref to the container */}
       <div className="mt-4">
         <div className={cn("dark:text-white text-black leading-snug tracking-wide", className)}>
           {renderWords()}

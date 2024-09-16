@@ -10,8 +10,9 @@ import { FlipWords } from "./ui/flip-words";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 function HeroSection() {
-  const name= `Hi, I’m Waqas.`
+  const name = "Hi, I'm Waqas.";
   const words = ["Web Developer", "Graphic Designer", "Frontend Developer", "App Developer"];
+  
   return (
     <div className="h-auto container md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
@@ -46,22 +47,22 @@ function HeroSection() {
               }}
               className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug mx-auto"
             >
-              <TextGenerateEffect words= {name}/>
-              I m a <FlipWords words={words} /> <br></br>
+              <TextGenerateEffect words={name} />
+              I&#39;m a <FlipWords words={words} /> <br />
               <Highlight className="text-black text-3xl dark:text-white">
-                Let's build something amazing!
+                Let&apos;s build something amazing!
               </Highlight>
             </motion.h1>
             <div className="mt-4">
-            <Link href="/">
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
-              >
-                Explore more
-              </Button>
-            </Link>
-          </div>
+              <Link href="/">
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                >
+                  Explore more
+                </Button>
+              </Link>
+            </div>
           </HeroHighlight>
         </div>
       </div>

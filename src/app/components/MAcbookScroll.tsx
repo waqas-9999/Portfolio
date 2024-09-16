@@ -1,7 +1,7 @@
 import React from "react";
 import { MacbookScroll } from "../components/ui/macbook-scroll";
 import Link from "next/link";
-import WLogo from '../../../public/WLogo.png'
+import WLogo from '../../../public/WLogo.png';
 import Image from "next/image";
 
 export function MacbookScrollDemo() {
@@ -10,7 +10,8 @@ export function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span>
-            Check Out My LinkedIn Profile <br />It's Worth a Look!
+            Check Out My LinkedIn Profile <br />
+            It&apos;s Worth a Look!
           </span>
         }
         badge={
@@ -24,6 +25,7 @@ export function MacbookScrollDemo() {
     </div>
   );
 }
+
 // W logo
 const Badge = ({ className }: { className?: string }) => {
   return (

@@ -18,11 +18,12 @@ export const StickyScroll = ({
   const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
-    // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
-    // target: ref
-    container: ref,
+    target: ref,  // For container scroll
+    // Remove or comment this for entire page scroll
+    // container: ref, // Only for scroll within the container
     offset: ["start start", "end start"],
   });
+  
   const cardLength = content.length;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
