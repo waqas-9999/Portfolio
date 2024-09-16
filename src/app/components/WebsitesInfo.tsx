@@ -2,13 +2,12 @@
 import React from "react";
 import { HeroParallax } from "../components/ui/hero-parallax";
 import BuycexTrade from "../../../public/BuycexTrade.png"
-import BuycexHomeOne from "../../../public/BuycexHome.png"
 import BuycexProfile from "../../../public/BuycexProfile.png"
 import BuycexMarket from "../../../public/BuycexMarket.png"
 import BuycexConvert from "../../../public/BuycexConvert.png"
 import BuycexChat from "../../../public/BuycexChat.png"
-import JaleebiHome from "../../../public/JaleebiHome.png"
-import JaleebiEcomm from "../../../public/JaleebiEcomm.png"
+import JaleebiHomePage from "../../../public/JaleebiHome.png"
+import JaleebiEcommPage from "../../../public/jaleebiEcommPage.png"
 import JaleebiReviews from "../../../public/JaleebiReviews.png"
 import SafeDepositHome from "../../../public/SafeDepositHome.png"
 import SafeDepositLogin from "../../../public/SafeDepositLogin.png"
@@ -35,7 +34,7 @@ export const products = [
   {
     title: "Buycex Profile",
     link: "https://buycex-repo.vercel.app/trade/p2p/advertiserdetail",
-    thumbnail:JaleebiHome.src,
+    thumbnail:JaleebiHomePage.src,
   },
 
   {
@@ -58,7 +57,7 @@ export const products = [
   {
     title: "Jaleebi Store",
     link: "https://jalebiexpress.pk/product-category/jalebi-t-shirt/",
-    thumbnail:JaleebiEcomm.src,
+    thumbnail:JaleebiEcommPage.src,
   },
   {
     title: "SafeDeposit",
